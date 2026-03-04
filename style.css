@@ -1,6 +1,7 @@
 *{
     margin: 0 ;
     padding: 0;
+    box-sizing: border-box;
     @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
     font-family: "Inter", sans-serif;
 }
@@ -13,7 +14,7 @@
     padding: 10px;
 }
 .menu{
-    margin-top: 20px;
+    margin-top: 15px;
 }
 .head{
     height: 10%;
@@ -22,7 +23,7 @@
     justify-content: space-between;
 }
 .body{
-    background-color: #ffb6c1 ;
+    background-color:#f7cad1 ;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -31,7 +32,6 @@
     border-radius: 10px;
 }
 .text{
-    height: 70%;
     width: 60%;
     font-size: medium;
     text-align: left;
@@ -43,10 +43,10 @@
 }
 .buy-now{
     color: white;
-    background-color: #ff1493;
+    background-image: linear-gradient(to top, #ff1493,#ff83c5 );
     border: none;
     font-size: small;
-    padding: 2px;
+    padding: 5px 10px;
     border-radius: 4px;
     cursor: pointer;
 }
@@ -63,10 +63,9 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    padding: 10px;
     gap: 20px;
-     color: white;
-     font-size: 20px;
+    color: white;
+    font-size: 20px;
 }
 .cat-product{
      width:100% ;
@@ -77,17 +76,18 @@
      align-items: center;
      border-radius: 4px;
      margin-top: 10px;
+     padding: 5px 10px;
 }
 .or{
-    background-color: orchid;
+    background-image: linear-gradient(to top, orchid,#fac2f8 );
     width: 33%;
 }
 .pink{
-    background-color: #cc3366;
+    background-image: linear-gradient(to top, #cc3366,#fd91b5);
     width: 33%;
 }
 .blue{
-    background-color: blueviolet;
+    background-image: linear-gradient(to top,  blueviolet, #be7cfc);
     width: 33%;
 }
 .shoes{
@@ -101,11 +101,11 @@
      align-items: center;
      gap: 20px;
      margin-top: 10px;
-     padding: 4px;
+     
 }
 .shoe-product{
      width: 100% ;
-     height: 400px;
+     height: 450px;
      text-align: center;
      display: flex;
      flex-direction: column;
@@ -113,6 +113,7 @@
      align-items: center;
      border-radius: 4px;
      border: 1.5px solid black;
+     padding: 5px 15px;
 }
 .black{
     background-color: black;
@@ -122,23 +123,23 @@
     padding: 7px;
     border-radius: 4px;
     cursor: pointer;
+    margin-bottom: 20px;
 }
 .backpack{
      width: 100%;
-    margin-top: 50px;
+     margin-top: 50px;
 }
 .back-grid{
      display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    gap: 20px;
+     flex-direction: row;
+     justify-content: space-between;
+     align-items: center;
+     gap: 20px;
      margin-top: 10px;
-     padding: 4px;
 }
 .back-product{
      width: 100% ;
-     height: 400px;
+     height: 450px;
      text-align: center;
      display: flex;
      flex-direction: column;
@@ -146,9 +147,10 @@
      align-items: center;
      border-radius: 4px;
      border: 1.5px solid black;
+      padding: 5px 15px;
 }
 .foot{
-    background-color: #ffb6c1 ;
+    background-color: #f7cad1 ;
     width: 90%%;
     border-radius: 10px;
     margin-top: 70px;
@@ -167,9 +169,40 @@
     border-radius: 4px 0 0 4px;
 }
 .send{
-    background-color: #ff1493;
+    background-image: linear-gradient(to top, #ff1493,#ff83c5 );
     color: white;
     border: none;
     padding: 3px 10px;
     border-radius: 0 4px 4px 0;
+}
+@media screen and(max-width:600px) {
+   .container{
+    width: 100%;
+    padding: 10px;
+   }
+   .body{
+    flex-direction: column-reverse;
+    text-align: center;
+    padding: 20px;
+   }
+   .text{
+    width: 100%;
+   }
+   .tv-image{
+    width: 80%;
+    height: auto;
+   }
+   .cat-product{
+    flex-direction: column;
+    height: auto;
+    gap: 15px;
+   }
+   .or, .pink, .blue{
+    width: 100%;
+    margin-bottom: 10px;
+   }
+   .h1{
+    font-size: 24px;
+    line-height: 1.2;
+   }
 }
