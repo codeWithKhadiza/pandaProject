@@ -1,6 +1,5 @@
 *{
     margin: 0 ;
-    padding: 0;
     box-sizing: border-box;
     @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
     font-family: "Inter", sans-serif;
@@ -151,7 +150,7 @@
 }
 .foot{
     background-color: #f7cad1 ;
-    width: 90%%;
+    width: 100%;
     border-radius: 10px;
     margin-top: 70px;
     cursor: pointer;
@@ -175,13 +174,14 @@
     padding: 3px 10px;
     border-radius: 0 4px 4px 0;
 }
-@media screen and(max-width:600px) {
+@media screen and (max-width:575px) {
    .container{
-    width: 100%;
-    padding: 10px;
+    width: 325px;
    }
    .body{
-    flex-direction: column-reverse;
+    height: 570px;
+    flex-direction: column;
+    align-items: center;
     text-align: center;
     padding: 20px;
    }
@@ -192,7 +192,7 @@
     width: 80%;
     height: auto;
    }
-   .cat-product{
+   .categ-grid{
     flex-direction: column;
     height: auto;
     gap: 15px;
@@ -204,5 +204,13 @@
    .h1{
     font-size: 24px;
     line-height: 1.2;
+   }
+   .shoes-grid{
+    flex-direction: column;
+    gap: 20px;
+   }
+   .back-grid{
+    flex-direction: column;
+    gap: 20px;
    }
 }
